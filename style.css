@@ -1,0 +1,95 @@
+*{margin: 0;padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.section_content{width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;background: wheat;}
+.sub-section_content{min-width: 900px;height: 500px;position: relative;background: rgb(255, 255, 255);border-radius: 10px;box-shadow: 20px 20px 10px 5px rgba(148, 74, 64, 0.4)}
+.sub-sub-section_content{width: 450px;height: 100%;float: left;background: rgb(250, 202, 114);display: flex;justify-content: center;align-items: center;border-radius: 10px 0px 0px 10px;}
+.sub-sub-sub-section_content{width: 400px;height: 400px;clip-path: circle(50% at 50% 50%);background: rgb(214, 156, 48);position: relative;display: flex;justify-content: center;align-items: flex-end;}
+.paragraph_w{position: absolute;right: 110px;top: 20px;font-size: 50px;font-weight: 700;color: rgb(214, 156, 48);font-family: 'Ubuntu', sans-serif;}
+.paragraph_u{position: absolute;right: 170px;top: 100px;font-size: 20px;font-weight: 700;color: rgb(10, 10, 150);font-family: 'Ubuntu', sans-serif;}
+input{border: none;outline: none;text-align: center;background-color: rgb(191, 191, 255);height: 30px;width: 300px;color: rgb(10, 10, 150);}
+input::-webkit-input-placeholder {color:rgb(255, 255, 255);}
+.login{position: absolute;right: 75px;top: 150px;}
+.password_1{position: absolute;right: 75px;top: 200px;}
+.password_2{position: absolute;right: 75px;top: 250px;}
+.submit{position: absolute;right: 75px;bottom: 50px;width: 150px;transition: .5s;}
+.login_check{position: absolute;right:190px; top:300px;text-align: center;}
+
+.coconut_1{width:150px;background:rgb(204, 92, 92);height:150px;clip-path: circle(11.9% at 50% 50%);left:50px;bottom:-50px;position: relative;}
+.coconut_2{width:150px;background:rgb(204, 92, 92);height:150px;clip-path: circle(11.9% at 50% 50%);left:77px;bottom:162px;position: absolute;}
+.coconut_3{width:150px;background:rgb(204, 92, 92);height:150px;clip-path: circle(11.9% at 50% 50%);left:165px;bottom:170px;position: absolute;}
+.coconut_4{width:150px;background:rgb(204, 92, 92);height:150px;clip-path: circle(11.9% at 50% 50%);left:150px;bottom:180px;position: absolute;}
+
+.sub-coconut{width:98%;background:rgb(231, 126, 126);height:98%;clip-path: circle(11.9% at 50% 50%);left:50px;bottom:-50px;}
+.sub-sub-coconut1{width:15px;background:rgb(27, 27, 27);height:15px;clip-path: circle(20.3% at 52% 50%);position: absolute;top: 55px;left:70px;}
+.sub-sub-coconut2{width:15px;background:rgb(27, 27, 27);height:15px;clip-path: circle(20.3% at 52% 50%);position: absolute;top: 60px;left:75px;}
+.sub-sub-coconut3{width:15px;background:rgb(27, 27, 27);height:15px;clip-path: circle(20.3% at 52% 50%);position: absolute;top: 62px;left:67px;}
+
+.coconut-tree{clip-path: polygon(75% 7%, 38% 81%, 30% 100%, 0 100%);width:200px;height:300px;background:rgb(54, 34, 2);position: absolute;z-index: 3;}
+.sub-coconut-tree{clip-path: polygon(75% 7%, 38% 81%, 30% 100%, 0 100%);width:255px;height:295px;background:rgb(77, 50, 7);position: absolute;z-index: 3;transform:rotate( 0deg);left: -35px;}
+.sub-coconut-tree1{position: absolute;background:green;clip-path: polygon(25% 0%, 100% 42%, 91% 79%, 54% 36%);width: 150px;height:150px;top:130px;left: 160px;transform:rotate(35deg);
+   animation-name: wave-tree_1;
+   animation-duration: 7s;
+   transition-timing-function: cubic-bezier(0.260, 0.805, 0.790, 0.005);
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.sub-coconut-tree2{position: absolute;background:green;clip-path: polygon(25% 0%, 100% 42%, 91% 79%, 54% 36%);width: 150px;height:150px;top:20px;left: 100px;transform:rotate(140deg);
+   animation-name: wave-tree_2;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.sub-coconut-tree3{position: absolute;background:green;clip-path: polygon(25% 0%, 100% 42%, 91% 79%, 54% 36%);width: 150px;height:150px;top:90px;left: 105px;transform:rotate(85deg);z-index:1;}
+.sub-sub-coconut-tree1{position: absolute;background:rgb(91, 184, 91);clip-path: polygon(25% 0%, 100% 42%, 91% 79%, 54% 36%);width: 150px;height:110px;position: relative;}
+.sub-sub-coconut-tree2{position: absolute;background:rgb(91, 184, 91);clip-path: polygon(25% 0%, 100% 42%, 91% 79%, 54% 36%);width: 165px;height:110px;position: relative;}
+.sub-sub-coconut-tree3{position: absolute;background:rgb(91, 184, 91);clip-path: polygon(25% 0%, 100% 42%, 91% 79%, 54% 36%);width: 140px;height:110px;position: relative;}
+
+@keyframes wave-tree_1{
+   50%{
+      transform:rotate(33deg);
+   }100%{
+      transform:rotate(37deg);
+   }
+}
+@keyframes wave-tree_2{
+   50%{
+      transform:rotate(135deg);
+   }100%{
+      transform:rotate(145deg);
+   }
+}
+.section-animation{clip-path: ellipse(100% 38% at 51% 31%);width: 100%;height: 100%;background: rgb(94, 149, 250);position:absolute;
+   animation-name: wave-animation_1;
+   animation-duration: 6s;
+   transition-timing-function: cubic-bezier(0.260, 0.805, 0.790, 0.005);
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.sub-section-animation{clip-path: ellipse(100% 47% at 51% 28%);width: 100%;height: 95%;background: rgb(62, 127, 248);position:absolute;
+   animation-name: wave-animation_2;
+   animation-duration: 6.5s;
+   transition-timing-function: cubic-bezier(0.260, 0.805, 0.790, 0.005);
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes wave-animation_1{
+   0%{
+      clip-path: ellipse(100% 38% at 51% 31%);
+   }50%{
+      clip-path: ellipse(100% 46% at 52% 41%);background: rgb(190, 190, 190);
+   }100%{
+      clip-path: ellipse(100% 47% at 51% 28%);
+   }
+}
+@keyframes wave-animation_2{
+   0%{
+      clip-path: ellipse(100% 47% at 51% 28%);
+   }50%{
+      clip-path: ellipse(100% 53% at 50% 36%);
+   }
+   100%{
+      clip-path: ellipse(100% 47% at 51% 28%);
+   }
+}
